@@ -1,4 +1,4 @@
-# Insert Lesson Title
+# Testing Methodologies
 
 ## Dependencies
 
@@ -10,10 +10,18 @@ Refer to the following markdown file for the respective sections of the class:
 ## Lesson Objectives
 
 Learners will understand:
-- Insert the knowledge to be acquired
+- The difference between functional and non-functional tests.
+- What is Software Development Lifecycle.
+- The different testing methodologies that takes place in the different phase of SDLC.
 
 Learners will be able to:
-- Insert the skillset to be acquired
+- Discuss in a group of 3 to determine:
+  - What testing methodologies to use?
+  - What to test?
+  - How to test?
+  - When to test (the SDLC phase)?
+- And present their findings to the class.
+- Learn from the peers and instructor's respond to each presentation.
 
 
 ## Lesson Plan
