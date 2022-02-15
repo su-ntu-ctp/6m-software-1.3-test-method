@@ -1,3 +1,3 @@
 ## Self Studies
 
-- Insert links
+- [Functional & Non-functional Tests](https://smartbear.com/learn/automated-testing/software-testing-methodologies/)
