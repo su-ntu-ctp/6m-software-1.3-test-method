@@ -13,12 +13,13 @@ Learners will understand:
 - What are functional and non-functional software testings.
 - What is Software Development Lifecycle.
 - The different testing methodologies that takes place in the different phase of SDLC.
+- JavaScript: Data types, control flow, arrays and objects.
 
 Learners will be able to:
-- Form a team of three or four to conclude:
-  - The purpose each software testings
-  - Who are part of the tests
-  - Which phase of SDLC is it being conducted
+- Identify possible testing methods in SDLC.
+- Utilizing JavaScript variables and control flow.
+- Loop an array with `for-loop`.
+- Create object literals and accessing its values.
 
 
 ## Lesson Plan
