@@ -8,6 +8,22 @@ Instructions are written as comment in the respective `.js` files.
 - [Array & Loop](./assignment/q2-arrays-loop.js)
 - [Objects](./assignment/q3-objects.js)
 
+### Demo Unit Test
+
+Instructor should demo the unit test at the end of the assignment.
+
+Shell Commands:
+```sh
+cd assignment
+npm i
+npm run test
+```
+
+Output:
+
+<img src="./assets/unit-test.png" />
+
+
 ### Submission 
 
 - Submit the URL of the GitHub Repository that contains your work to NTU black board.

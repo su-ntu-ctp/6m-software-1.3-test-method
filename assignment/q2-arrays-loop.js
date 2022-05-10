@@ -1,12 +1,22 @@
 /*
     Task
-    - Implement a function `printStudentList`.
     - In the function, iterate through the array `studentList`.
-    - Print each student's name inside the loop.
+    - Print each student's name inside the loop using console.log().
 */
 
 const studentList = ["Johnson", "Christina", "Michael", "Lina", "Larry", "Michelle", "Bob", "Wilson"]
 
-// Task: Add code here
+function printStudentNames(){
+    // Add code here
+    for(let s of studentList){
+        console.log(s);
+    }    
+}
 
-printStudentList();
+printStudentNames();
+
+// Ignore the code below this line
+module.exports = {
+    studentList,
+    printStudentNames
+}
