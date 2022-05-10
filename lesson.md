@@ -12,9 +12,10 @@ npm run test
 
 If you face issue running `jest` in the `devDependency`, a quick remedy is to run `npm i -g jest` first.
 
-### Note
+### Note for Instructors
 
 - Run all `.js` files with `node` in the Terminal.
+- While running JS code, use debugging terminal to visually guide learners how codes are executed.
 
 ---
 
@@ -40,39 +41,72 @@ Source: https://www.javatpoint.com/software-engineering-software-development-lif
 
 ### Functional Testings
 
-1. *Unit Test* - 
-2. *Integration Test* -
-3. *Acceptance Test* - 
+1. *Unit Test* - An isolation testing targeting at the smallest piece of logic in the software.
+2. *Integration Test* - Testing multiple software modules together as a group.
+3. *Acceptance Test* - Testing the functionality of the software by end users before launch.
 
 ### Non-functional Testings
 
-1. *Performance Test* -
-    1. Load Test -
-    1. Stress Test - 
-    1. Endurance Test -
+1. *Performance Test* - A non functional test to determine the stability, speed, responsiveness and resilience of the system.
+    1. Load Test - Simulate an increasing amount of traffics/requests sent to the system.
+    1. Stress Test - Determine the peak load and/or how much requests the system can receive.
+    1. Endurance Test - Determine the behaviour of the system at the peak load over time.
 1. *Security Test* -
-    1. Dependency Vulnerabilities -
-    1. Secrets & Data Storage Strategy - 
+    1. Dependency Vulnerabilities - Scanning for vulnerabilities introduced by dependencies.
+    1. Secrets & Data Storage Strategy - Determine how secure are secrets and sensitive data being stored.
 ---
 
 ## Part 3 - Group Discussion
 
-Insert Instructions
+Understanding Part 1 and Part 2, learners will be grouped in a team of 3 or 4 to research (google), discuss and fulfil the blanks in the following table. Learners may simple use google docs for this.
+
+|The Test|When? (SDLC)|How are they performed?|
+|----|----|---|
+|Unit Test|Enter 1 to 7|3 sentences max|
+|Integration Test|Enter 1 to 7|3 sentences max|
+|Acceptance Test|Enter 1 to 7|3 sentences max|
+|Performance Test|Enter 1 to 7|3 sentences max|
+|Security Test|Enter 1 to 7|3 sentences max|
+
+> Bonus Question: Are there any other forms of software/system testings that are not listed in this lesson?
+
+### Example
+|The Test|When? (SDLC)|How are they performed?|
+|----|----|---|
+|Security Test|5,6,7 and 7|It can be done with automation, engage testing companies, or AI|
 
 ---
 
 ## Part 4 - Data Types in JavaScript
 
-Insert Instructions
+The primitive data types of JavaScript are:
+- number
+- string
+- boolean
+- null
+- undefined
+- symbol (advanced, not covering)
+
+The composite types are:
+- object
+- array
+
+Check out [this](./src/data-types.js) JS file.
 
 ---
 
 ## Part 5 - Arrays
 
-Insert Instructions
+Arrays consist of indices and values.
 
+<img src="./assets/array.jpeg" />
+Source: https://www.geeksforgeeks.org/c-sharp-arrays/
+
+Look at the basic use of array [here](./src/arrays.js).
 ---
 
 ## Part 6 - Objects
 
-Insert Instructions
+Objects are made up with key value pairs. In some programming language, the name of the data structure is "Dictionary". In JavaScript, we call it objects.
+
+Look at the basic use of object [here](./src/objects.js).
