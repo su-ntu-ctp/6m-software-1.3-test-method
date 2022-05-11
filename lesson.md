@@ -107,6 +107,6 @@ Look at the basic use of array [here](./src/arrays.js).
 
 ## Part 6 - Objects
 
-Objects are made up with key value pairs. In some programming language, the name of the data structure is "Dictionary". In JavaScript, we call it objects.
+Objects are made up with key-value pairs that represent properties and values. In some programming languages, the name of the data structure is "Dictionary". In JavaScript, they are called objects.
 
 Look at the basic use of object [here](./src/objects.js).
