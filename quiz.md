@@ -23,7 +23,7 @@
 - D: Regression testing
 ---
 
-### Q4: What test deals with testing the functionality of the software by end users before launch?
+### Q4: What test deals with testing multiple software modules together as a group?
 - A: Unit testing
 - B: Integration testing
 - C: Acceptance testing
