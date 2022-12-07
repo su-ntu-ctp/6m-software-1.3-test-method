@@ -31,9 +31,9 @@ function convert(keyArr, valueArr) {
     */
   booksObj = {};
   for (i = 0; i < keyArr.length; i++) {
-    keyArr = bookIdArr[i];
-    valueArr = bookTitle[i];
-    booksObj[keyArr] = valueArr;
+    key = keyArr[i];
+    value = valueArr[i];
+    booksObj[key] = value;
   }
   return booksObj;
 }
