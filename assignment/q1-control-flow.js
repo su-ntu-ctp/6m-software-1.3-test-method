@@ -1,6 +1,6 @@
 /*
     Task
-    - Implement a switch statement to check against `env` variable.
+    - Implement a switch statement to check against `env` constant.
     - If `env` is "DEV", no change to `databaseCredential`.
     - If `env` is "STAGE", modify `databaseCredential` to "stageuser:password".
     - If `env` is "PROD", modify `databaseCredential` to "produser:password"
