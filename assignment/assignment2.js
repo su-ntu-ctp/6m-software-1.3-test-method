@@ -13,3 +13,9 @@ function printStudentNames(){
 }
 
 printStudentNames(studentList);
+
+// Ignore the code below this line
+module.exports = {
+    studentList,
+    printStudentNames
+}
