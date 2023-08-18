@@ -12,10 +12,9 @@ npm run test
 
 If you face issue running `jest` in the `devDependency`, a quick remedy is to run `npm i -g jest` first.
 
-### Note for Instructors
-
-- Run all `.js` files with `node` in the Terminal.
-- While running JS code, use debugging terminal to visually guide learners how codes are executed.
+> Note for instructors
+> - Run all `.js` files with `node` in the Terminal.
+> - While running JS code, use debugging terminal to visually guide learners how codes are executed.
 
 ---
 
