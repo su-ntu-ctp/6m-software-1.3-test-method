@@ -100,9 +100,10 @@ Check out [this](./src/data-types.js) JS file.
 Arrays consist of indices and values.
 
 <img src="./assets/array.jpeg" />
-Source: https://www.geeksforgeeks.org/c-sharp-arrays/
+Source: [Arrays](https://www.geeksforgeeks.org/c-sharp-arrays/)
 
 Look at the basic use of array [here](./src/arrays.js).
+
 ---
 
 ## Part 6 - Objects
