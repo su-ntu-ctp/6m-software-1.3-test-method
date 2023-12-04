@@ -31,18 +31,18 @@ Learners will be able to:
 |Duration|What|How or Why|
 |--------|-----|-------|
 |- 5mins |Start zoom session|So that students can join early and start class on time|
-|10 mins|Conceptual Knowledge| Part 1 - What is SDLC? |
+|30 mins|Conceptual Knowledge| Part 1 - What is SDLC? |
 |20 mins|Conceptual Knowledge| Part 2 - What are the software testing methods?|
-|30 mins|Group Discussion| Part 3 - Fill in the blanks on the given table|
+|10 mins|Group Discussion| Part 3 - Fill in the blanks on the given table|
 ||**1 HR MARK**|
-|5 mins|Break|
+|10 mins|Break|
 |10 mins|Code Along| Part 4 - The Data Types in JavaScript|
-|15 mins|Code Along| Part 5 - Array|
+|20 mins|Code Along| Part 5 - Array|
 |20 mins|Code Along| Part 6 - Objects|
-|5 mins|Break|
-|5 mins|Assignment Briefing|Help students to understand the expectation and direction of the assignment to prevent mis-interpretations.|
 ||**2 HR MARK**|
-|50 mins|Learners self attempt on assignments|
+|20 mins|Code Discussion|Explain how tests work and how to run tests using Jest|
+|10 mins|Assignment Brief|Align expectations with learners|
+|20 mins|Learners self attempt on assignments|
 |10 mins|Instructors assist learners to push changes to remote repository.|
 ||**END CLASS 3 HR MARK**|
 
