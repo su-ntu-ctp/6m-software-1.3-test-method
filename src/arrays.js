@@ -16,18 +16,18 @@ for(let i=0 ;i<defaults.length; i++){
 /*Class discussion
 Array methods:
 Break out into groups and research how each of the array methods can be used and give an example.
-1. push
-2. pop
-3. shift
-4. unshift
-5. splice
-6. slice
+    1. push
+    2. pop
+    3. shift
+    4. unshift
+    5. splice
+    6. slice
 */
 
 //Exercise:
 /*
 Question 1:
-1. Create an array called grades with 5 numeric values
+1. Create an array called "grades" with 5 numeric values
 2. Use a for loop to loop through the array to get the average of the values.
 
 Question 2:
