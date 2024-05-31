@@ -15,3 +15,20 @@ console.log("I am born in", person.yearOfBirth);
 for(let key in person){
     console.log("key is", key, "and value is", person[key]);
 }
+
+/*Class discussion
+Break out into groups and discussion what are the following:
+    1. Object Destructuring
+    2. Template Literals 
+Provide examples for each.
+*/
+
+/*
+Activity:
+1. Create an object called "school" with the following fields (values are up to the learner): 
+    a. Name - String
+    b. yearEstablished - Number
+    c. isActive - Boolean
+    d. coursesOffered - Array containing 3 Strings
+2. Print in the console the following sentence using the "school object" - "Welcome to <name> and we offer <coursesOffered>
+*/
