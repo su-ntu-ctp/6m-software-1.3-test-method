@@ -24,7 +24,7 @@ Provide examples for each.
 */
 
 /*
-Activity:
+Exercise:
 1. Create an object called "school" with the following fields (values are up to the learner): 
     a. Name - String
     b. yearEstablished - Number
