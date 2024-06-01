@@ -2,15 +2,7 @@
 
 ### Lesson Overview
 
-We will be spending the first hour to learn about software testings, and next 2 hours on quick JavaScript lesson and assignment. At the end of the lesson, learners will see a short demo on unit test within the [assignment](./assignment) folder.
-
-Command to run test:
-
-```sh
-npm run test 
-```
-
-If you face issue running `jest` in the `devDependency`, a quick remedy is to run `npm i -g jest` first.
+We will be spending the first hour to learn about software testings, and next 2 hours on quick JavaScript lesson and assignment. 
 
 > Note for instructors
 > - Run all `.js` files with `node` in the Terminal.
@@ -57,22 +49,24 @@ Source: https://www.javatpoint.com/software-engineering-software-development-lif
 
 ## Part 3 - Group Discussion
 
-Understanding Part 1 and Part 2, learners will be grouped in a team of 3 or 4 to research (google), discuss and fulfil the blanks in the following table. Learners may simple use google docs for this.
+Different industries apply the stages of the Software Development Life Cycle (SDLC) in various ways, depending on their specific needs and requirements. Here is an example of how an industry approaches the SDLC stages:
 
-|The Test|When? (SDLC)|How are they performed?|
-|----|----|---|
-|Unit Test|Enter 1 to 7|3 sentences max|
-|Integration Test|Enter 1 to 7|3 sentences max|
-|Acceptance Test|Enter 1 to 7|3 sentences max|
-|Performance Test|Enter 1 to 7|3 sentences max|
-|Security Test|Enter 1 to 7|3 sentences max|
+### Finance and Banking
+*Planning*: Rigorous planning is crucial due to strict regulatory compliance and security requirements. Detailed documentation and approvals are necessary.
+*Requirements Gathering*: Close collaboration with business stakeholders and legal teams to capture complex financial rules and regulations.
+*Design*: Emphasis on secure system architecture, data encryption, and access controls.[4]
+*Development*: Adherence to coding standards and best practices for financial applications, such as OWASP guidelines.
+*Testing*: Extensive testing, including security testing, penetration testing, and stress testing, to ensure system robustness and data integrity.
+*Deployment*: Careful planning for data migration, user training, and compliance with regulatory bodies.
+*Maintenance*: Continuous monitoring for security vulnerabilities, regulatory changes, and system performance.
 
-> Bonus Question: Are there any other forms of software/system testings that are not listed in this lesson?
+Understanding Part 1 and Part 2, learners will be grouped in a team of 3 or 4 to research (google), discuss how an industry approaches the SDLC stages. Learners may simple use google docs for this.
 
-### Example
-|The Test|When? (SDLC)|How are they performed?|
-|----|----|---|
-|Security Test|5,6,7 and 7|It can be done with automation, engage testing companies, or AI|
+Here are the industries per group:
+Group 1 - eCommerce
+Group 2 - Healthcare
+Group 3 - eLearning
+Group 4 - Social Media
 
 ---
 
@@ -110,3 +104,21 @@ Look at the basic use of array [here](./src/arrays.js).
 Objects are made up with key-value pairs that represent properties and values. In some programming languages, the name of the data structure is "Dictionary". In JavaScript, they are called objects.
 
 Look at the basic use of object [here](./src/objects.js).
+
+---
+
+## Part 7 - Testing using Jest
+
+For this part, learners will see a short demo on unit test within the [assignment](./assignment) folder.
+
+In order for us to test out our codes, we can use a testing suite and write our own tests. In JavaScript, we can use `jest` as our test suite. To install jest in our local machines, we use the command `npm install -g jest`, this installs jest globally so that other projects can use it.
+
+After installing jest, we can now write tests for our code. The file `demo.test.js` is a sample test file that has been created for the assignment. We'll be using this for our demo and to test the solutions to the assignment.
+
+The assignment has a built-in `package.json` that contains the script for testing.
+Command to run test:
+
+```sh
+npm run test 
+```
+
