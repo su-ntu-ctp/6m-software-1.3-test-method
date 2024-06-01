@@ -52,21 +52,21 @@ Source: https://www.javatpoint.com/software-engineering-software-development-lif
 Different industries apply the stages of the Software Development Life Cycle (SDLC) in various ways, depending on their specific needs and requirements. Here is an example of how an industry approaches the SDLC stages:
 
 ### Finance and Banking
-*Planning*: Rigorous planning is crucial due to strict regulatory compliance and security requirements. Detailed documentation and approvals are necessary.
-*Requirements Gathering*: Close collaboration with business stakeholders and legal teams to capture complex financial rules and regulations.
-*Design*: Emphasis on secure system architecture, data encryption, and access controls.[4]
-*Development*: Adherence to coding standards and best practices for financial applications, such as OWASP guidelines.
-*Testing*: Extensive testing, including security testing, penetration testing, and stress testing, to ensure system robustness and data integrity.
-*Deployment*: Careful planning for data migration, user training, and compliance with regulatory bodies.
-*Maintenance*: Continuous monitoring for security vulnerabilities, regulatory changes, and system performance.
+ - *Planning*: Rigorous planning is crucial due to strict regulatory compliance and security requirements. Detailed documentation and approvals are necessary.
+- *Requirements Gathering*: Close collaboration with business stakeholders and legal teams to capture complex financial rules and regulations.
+- *Design*: Emphasis on secure system architecture, data encryption, and access controls.[4]
+- *Development*: Adherence to coding standards and best practices for financial applications, such as OWASP guidelines.
+- *Testing*: Extensive testing, including security testing, penetration testing, and stress testing, to ensure system robustness and data integrity.
+- *Deployment*: Careful planning for data migration, user training, and compliance with regulatory bodies.
+- *Maintenance*: Continuous monitoring for security vulnerabilities, regulatory changes, and system performance.
 
 Understanding Part 1 and Part 2, learners will be grouped in a team of 3 or 4 to research (google), discuss how an industry approaches the SDLC stages. Learners may simple use google docs for this.
 
 Here are the industries per group:
-Group 1 - eCommerce
-Group 2 - Healthcare
-Group 3 - eLearning
-Group 4 - Social Media
+1. Group 1 - eCommerce
+1. Group 2 - Healthcare
+1. Group 3 - eLearning
+1. Group 4 - Social Media
 
 ---
 
