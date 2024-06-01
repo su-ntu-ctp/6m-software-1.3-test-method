@@ -2,7 +2,7 @@
 
 ### Lesson Overview
 
-We will be spending the first hour to learn about software testings, and next 2 hours on quick JavaScript lesson and assignment. At the end of the assignment, learners will see a short demo on unit test within the [assignment](./assignment) folder.
+We will be spending the first hour to learn about software testings, and next 2 hours on quick JavaScript lesson and assignment. At the end of the lesson, learners will see a short demo on unit test within the [assignment](./assignment) folder.
 
 Command to run test:
 
