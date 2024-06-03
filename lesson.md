@@ -54,7 +54,7 @@ Different industries apply the stages of the Software Development Life Cycle (SD
 ### Finance and Banking
  - *Planning*: Rigorous planning is crucial due to strict regulatory compliance and security requirements. Detailed documentation and approvals are necessary.
 - *Requirements Gathering*: Close collaboration with business stakeholders and legal teams to capture complex financial rules and regulations.
-- *Design*: Emphasis on secure system architecture, data encryption, and access controls.[4]
+- *Design*: Emphasis on secure system architecture, data encryption, and access controls.
 - *Development*: Adherence to coding standards and best practices for financial applications, such as OWASP guidelines.
 - *Testing*: Extensive testing, including security testing, penetration testing, and stress testing, to ensure system robustness and data integrity.
 - *Deployment*: Careful planning for data migration, user training, and compliance with regulatory bodies.
