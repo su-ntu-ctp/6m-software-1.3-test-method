@@ -2,7 +2,7 @@
 
 ### Lesson Overview
 
-We will be spending the first hour to learn about software testings, and next 2 hours on quick JavaScript lesson and assignment. 
+We will be spending the first hour to learn about software testings, and next 2 hours creating tests for simple JavaScript applications. 
 
 > Note for instructors
 > - Run all `.js` files with `node` in the Terminal.
@@ -70,50 +70,13 @@ Here are the industries per group:
 
 ---
 
-## Part 4 - Data Types in JavaScript
+## Part 4 - Testing using Jest
 
-The primitive data types of JavaScript are:
-- number
-- string
-- boolean
-- null
-- undefined
-- symbol (advanced, not covering)
+For this part, learners will first see a short demo on unit test within the [assignment](./assignment) folder.
 
-The composite types are:
-- object
-- array
+In order for us to test out our codes, we can use a testing suite and write our own tests. In JavaScript, we can use `jest` as our test suite. To install Jest in our local machines, we use the command `npm install -g jest`, this installs Jest globally so that other projects can use it.
 
-Check out [this](./src/data-types.js) JS file.
-
----
-
-## Part 5 - Arrays
-
-Arrays consist of indices and values.
-
-<img src="./assets/array.jpeg" />
-Source: [Arrays](https://www.geeksforgeeks.org/c-sharp-arrays/)
-
-Look at the basic use of array [here](./src/arrays.js).
-
----
-
-## Part 6 - Objects
-
-Objects are made up with key-value pairs that represent properties and values. In some programming languages, the name of the data structure is "Dictionary". In JavaScript, they are called objects.
-
-Look at the basic use of object [here](./src/objects.js).
-
----
-
-## Part 7 - Testing using Jest
-
-For this part, learners will see a short demo on unit test within the [assignment](./assignment) folder.
-
-In order for us to test out our codes, we can use a testing suite and write our own tests. In JavaScript, we can use `jest` as our test suite. To install jest in our local machines, we use the command `npm install -g jest`, this installs jest globally so that other projects can use it.
-
-After installing jest, we can now write tests for our code. The file `demo.test.js` is a sample test file that has been created for the assignment. We'll be using this for our demo and to test the solutions to the assignment.
+After installing Jest, we can now write tests for our code. The file `demo.test.js` is a sample test file that has been created for the assignment. We'll be using this for our demo and to test the solutions to the assignment.
 
 The assignment has a built-in `package.json` that contains the script for testing.
 Command to run test:
@@ -121,4 +84,34 @@ Command to run test:
 ```sh
 npm run test 
 ```
+
+Notice how the test would fail after the script. The reason is because there are no solutions yet to the questions 2 and 3. The test is written in such a way that it would run the functions and expect values. 
+
+Note to instructor: switch to the `answer` branch and run the command again to let the learners see what a successful test looks like.
+
+### Writing tests
+
+Jest can be used to write tests for JS applications. To write a test, the file must end with the `.test.js` extension.
+
+A test suite is a collection of tests that can be done for the specific test file. 
+
+To create a test suite, the `describe` keyword is used.
+```js
+describe("description of the test suite", () => {
+    //tests to be written
+})
+```
+Individual tests are written using the `it` keyword.
+
+```js
+it("test description", () => {
+    //test itself
+})
+```
+
+Tests typically are done wherein a function is called with necessary parameters and then compared with a specific result. 
+
+In order to achieve this, the `expect` keyword is the value to be tested and `toBe` the expected value.
+
+There are other keywords that can be used to test such as `toBeCalledTimes` for loops. The documentation is very helpful for us to check how to compare values.
 
