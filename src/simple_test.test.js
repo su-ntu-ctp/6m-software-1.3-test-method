@@ -1,4 +1,4 @@
-const {addFunc, isDivisbleBy5} = require("./sample");
+const {addFunc, isDivisibleBy5} = require("./sample");
 
 describe("Test Suite for sample.js functions", ()=>{
     
@@ -8,7 +8,7 @@ describe("Test Suite for sample.js functions", ()=>{
     })
 
     it("should check divisibility by 5", ()=>{
-        const result = isDivisbleBy5(1283);
+        const result = isDivisibleBy5(1283);
         expect(result).toBe(false);
     })
 })

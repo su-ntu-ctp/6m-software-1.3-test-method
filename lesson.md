@@ -72,22 +72,9 @@ Here are the industries per group:
 
 ## Part 4 - Testing using Jest
 
-For this part, learners will first see a short demo on unit test within the [assignment](./assignment) folder.
+### Setup
 
-In order for us to test out our codes, we can use a testing suite and write our own tests. In JavaScript, we can use `jest` as our test suite. To install Jest in our local machines, we use the command `npm install -g jest`, this installs Jest globally so that other projects can use it.
-
-After installing Jest, we can now write tests for our code. The file `demo.test.js` is a sample test file that has been created for the assignment. We'll be using this for our demo and to test the solutions to the assignment.
-
-The assignment has a built-in `package.json` that contains the script for testing.
-Command to run test:
-
-```sh
-npm run test 
-```
-
-Notice how the test would fail after the script. The reason is because there are no solutions yet to the questions 2 and 3. The test is written in such a way that it would run the functions and expect values. 
-
-Note to instructor: switch to the `answer` branch and run the command again to let the learners see what a successful test looks like.
+In order for us to test out our codes, we can use a testing package and write our own tests. In JavaScript, we can use `jest` as our test package. To install Jest in our local machines, we use the command `npm install -g jest`, this installs Jest globally so that other projects can use it.
 
 ### Writing tests
 
@@ -101,7 +88,19 @@ describe("description of the test suite", () => {
     //tests to be written
 })
 ```
-Individual tests are written using the `it` keyword.
+
+Let's create a test file called `simple_test.js`.
+```js
+//simple_test.js
+const {addFunc, isDivisbleBy5} = require("./sample");
+
+describe("Test Suite for sample.js functions", ()=>{
+    
+})
+```
+The `require` allows the test file to use the `addFunc` and `isDivisbleBy5` functions that we exported from our `sample.js` file. You can take a look at the `sample.js` file to see how the functions were exported.
+
+After the test suite has been created, individual tests are written using the `it` keyword.
 
 ```js
 it("test description", () => {
@@ -113,5 +112,46 @@ Tests typically are done wherein a function is called with necessary parameters 
 
 In order to achieve this, the `expect` keyword is the value to be tested and `toBe` the expected value.
 
+```js
+//simple_test.js
+const {addFunc, isDivisbleBy5} = require("./sample");
+
+describe("Test Suite for sample.js functions", ()=>{
+    
+    it("should add 3 numbers", ()=>{
+        const result = addFunc(1, 3, 4);
+        expect(result).toBe(7);
+    })
+
+    it("should check divisibility by 5", ()=>{
+        const result = isDivisbleBy5(1283);
+        expect(result).toBe(false);
+    })
+})
+```
+
 There are other keywords that can be used to test such as `toBeCalledTimes` for loops. The documentation is very helpful for us to check how to compare values.
 
+### Running tests
+
+To run tests, go to the folder where the test is located and run the command: `npm run test`.
+
+After the test is run, the result would show which test would pass or fail. 
+
+<img src="./assets/failed-unit-test.PNG">
+<img src="./assets/failed-unit-test-2.PNG">
+
+Rewrite the test that failed and run the test command again and see how the tests pass this time.
+
+### Test-Driven Development
+One of the Agile methodologies is *Test Driven Development*. The concept behind it is that tests are written for all the functionalities of the application first before any actual coding will take place. 
+
+After the tests have been written, code now will be written to pass the tests.
+
+<img src="https://raw.githubusercontent.com/mjhea0/flaskr-tdd/master/tdd.png">
+
+This way, developers know that the functionality works before pushing the code into repositories.
+
+In the assignment folder, a sample test file called `demo.test.js` has been created that would test the code for `q2-arrays-loops.js` and `q3-objects.js`. This would simulate the part of TDD where the test have been written and it would fail when run.
+
+For the assignment, the students will have to write the code to make the tests pass in `demo.test.js` to complete the TDD cycle.
