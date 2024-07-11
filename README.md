@@ -13,14 +13,10 @@ Learners will understand:
 - What are functional and non-functional software testings.
 - What is Software Development Lifecycle.
 - The different testing methodologies that takes place in the different phase of SDLC.
-- JavaScript (recap): Data types, control flow, arrays and objects. 📚
 
 Learners will be able to:
 - Identify possible testing methods in SDLC.
-- Use JavaScript variables and control flow. 📚
-- Loop an array with `for-loop`.📚
-- Create object literals and accessing its values.📚
-- Run JavaScript test cases using JEST 
+- Write and run JavaScript test cases using JEST 
 
 > 📚 Note: Parts of this lesson revisits fundamental JavaScript concepts necessary for
 > upcoming React modules in the course. Prior to enrollment, learners are required to
@@ -36,11 +32,9 @@ Learners will be able to:
 |10 mins|Group Discussion| Part 3 - Fill in the blanks on the given table|
 ||**1 HR MARK**|
 |10 mins|Break|
-|10 mins|Code Along| Part 4 - The Data Types in JavaScript|
-|20 mins|Code Along| Part 5 - Array|
-|20 mins|Code Along| Part 6 - Objects|
+|50 mins|Code Along| Explain how tests work and writing tests|
 ||**2 HR MARK**|
-|20 mins|Code Discussion|Explain how tests work and how to run tests using Jest|
+|20 mins|Code Discussion| and how to run tests using Jest|
 |10 mins|Assignment Brief|Align expectations with learners|
 |20 mins|Learners self attempt on assignments|
 |10 mins|Instructors assist learners to push changes to remote repository.|

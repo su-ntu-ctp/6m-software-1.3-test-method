@@ -2,7 +2,7 @@
 
 ### Lesson Overview
 
-We will be spending the first hour to learn about software testings, and next 2 hours on quick JavaScript lesson and assignment. 
+We will be spending the first hour to learn about software testings, and next 2 hours creating tests for simple JavaScript applications. 
 
 > Note for instructors
 > - Run all `.js` files with `node` in the Terminal.
@@ -70,55 +70,88 @@ Here are the industries per group:
 
 ---
 
-## Part 4 - Data Types in JavaScript
+## Part 4 - Testing using Jest
 
-The primitive data types of JavaScript are:
-- number
-- string
-- boolean
-- null
-- undefined
-- symbol (advanced, not covering)
+### Setup
 
-The composite types are:
-- object
-- array
+In order for us to test out our codes, we can use a testing package and write our own tests. In JavaScript, we can use `jest` as our test package. To install Jest in our local machines, we use the command `npm install -g jest`, this installs Jest globally so that other projects can use it.
 
-Check out [this](./src/data-types.js) JS file.
+### Writing tests
 
----
+Jest can be used to write tests for JS applications. To write a test, the file must end with the `.test.js` extension.
 
-## Part 5 - Arrays
+A test suite is a collection of tests that can be done for the specific test file. 
 
-Arrays consist of indices and values.
-
-<img src="./assets/array.jpeg" />
-Source: [Arrays](https://www.geeksforgeeks.org/c-sharp-arrays/)
-
-Look at the basic use of array [here](./src/arrays.js).
-
----
-
-## Part 6 - Objects
-
-Objects are made up with key-value pairs that represent properties and values. In some programming languages, the name of the data structure is "Dictionary". In JavaScript, they are called objects.
-
-Look at the basic use of object [here](./src/objects.js).
-
----
-
-## Part 7 - Testing using Jest
-
-For this part, learners will see a short demo on unit test within the [assignment](./assignment) folder.
-
-In order for us to test out our codes, we can use a testing suite and write our own tests. In JavaScript, we can use `jest` as our test suite. To install jest in our local machines, we use the command `npm install -g jest`, this installs jest globally so that other projects can use it.
-
-After installing jest, we can now write tests for our code. The file `demo.test.js` is a sample test file that has been created for the assignment. We'll be using this for our demo and to test the solutions to the assignment.
-
-The assignment has a built-in `package.json` that contains the script for testing.
-Command to run test:
-
-```sh
-npm run test 
+To create a test suite, the `describe` keyword is used.
+```js
+describe("description of the test suite", () => {
+    //tests to be written
+})
 ```
 
+Let's create a test file called `simple_test.js`.
+```js
+//simple_test.js
+const {addFunc, isDivisbleBy5} = require("./sample");
+
+describe("Test Suite for sample.js functions", ()=>{
+    
+})
+```
+The `require` allows the test file to use the `addFunc` and `isDivisbleBy5` functions that we exported from our `sample.js` file. You can take a look at the `sample.js` file to see how the functions were exported.
+
+After the test suite has been created, individual tests are written using the `it` keyword.
+
+```js
+it("test description", () => {
+    //test itself
+})
+```
+
+Tests typically are done wherein a function is called with necessary parameters and then compared with a specific result. 
+
+In order to achieve this, the `expect` keyword is the value to be tested and `toBe` the expected value.
+
+```js
+//simple_test.js
+const {addFunc, isDivisbleBy5} = require("./sample");
+
+describe("Test Suite for sample.js functions", ()=>{
+    
+    it("should add 3 numbers", ()=>{
+        const result = addFunc(1, 3, 4);
+        expect(result).toBe(7);
+    })
+
+    it("should check divisibility by 5", ()=>{
+        const result = isDivisbleBy5(1283);
+        expect(result).toBe(false);
+    })
+})
+```
+
+There are other keywords that can be used to test such as `toBeCalledTimes` for loops. The documentation is very helpful for us to check how to compare values.
+
+### Running tests
+
+To run tests, go to the folder where the test is located and run the command: `npm run test`.
+
+After the test is run, the result would show which test would pass or fail. 
+
+<img src="./assets/failed-unit-test.PNG">
+<img src="./assets/failed-unit-test-2.PNG">
+
+Rewrite the test that failed and run the test command again and see how the tests pass this time.
+
+### Test-Driven Development
+One of the Agile methodologies is *Test Driven Development*. The concept behind it is that tests are written for all the functionalities of the application first before any actual coding will take place. 
+
+After the tests have been written, code now will be written to pass the tests.
+
+<img src="https://raw.githubusercontent.com/mjhea0/flaskr-tdd/master/tdd.png">
+
+This way, developers know that the functionality works before pushing the code into repositories.
+
+In the assignment folder, a sample test file called `demo.test.js` has been created that would test the code for `q2-arrays-loops.js` and `q3-objects.js`. This would simulate the part of TDD where the test have been written and it would fail when run.
+
+For the assignment, the students will have to write the code to make the tests pass in `demo.test.js` to complete the TDD cycle.
