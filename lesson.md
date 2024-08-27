@@ -89,7 +89,7 @@ describe("description of the test suite", () => {
 })
 ```
 
-Let's create a test file called `simple_test.js`.
+Let's create a test file called `simple_test.test.js`.
 ```js
 //simple_test.js
 const {addFunc, isDivisbleBy5} = require("./sample");
