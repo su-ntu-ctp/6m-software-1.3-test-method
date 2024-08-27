@@ -91,7 +91,7 @@ describe("description of the test suite", () => {
 
 Let's create a test file called `simple_test.test.js`.
 ```js
-//simple_test.js
+//simple_test.test.js
 const {addFunc, isDivisbleBy5} = require("./sample");
 
 describe("Test Suite for sample.js functions", ()=>{
@@ -113,7 +113,7 @@ Tests typically are done wherein a function is called with necessary parameters 
 In order to achieve this, the `expect` keyword is the value to be tested and `toBe` the expected value.
 
 ```js
-//simple_test.js
+//simple_test.test.js
 const {addFunc, isDivisbleBy5} = require("./sample");
 
 describe("Test Suite for sample.js functions", ()=>{
